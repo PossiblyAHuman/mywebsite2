@@ -1,0 +1,36 @@
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*outline: 3px solid green;*/
+    margin: 0 auto;
+    height: 250px;
+}
+.project-text-container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    /*max-width: 800px;*/
+}
+.project-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+}
+.project-text{
+    margin: 0;
+}
+.project-image {
+    height: 400px;
+    width: 100%;
+    object-fit: cover
+}

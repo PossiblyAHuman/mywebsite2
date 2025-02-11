@@ -1,0 +1,66 @@
+.navbar {
+    /*background-color: #333; */
+    background-color: #FFFAFA;
+    padding: 0px;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other elements */
+    /*opacity: 1;
+    transition: opacity 0.3s ease-in-out;*/
+    transition: transform 0.2s ease-in-out;
+   
+}
+.navbar-hidden {
+    transform: translateY(-100%); /* Move navbar off-screen */
+}
+  
+.navbar-visible {
+    transform: translateY(0); /* Bring navbar into view */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.nav-logo-container{
+    color: #003C5D;
+    font-size: 24px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+.nav-logo {
+    max-width: 50px;
+}
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.nav-links {
+    text-decoration: none;
+    font-size: 18px;
+    color: #003C5D;
+}
+.nav-links:hover {
+    color: orange;
+    /*#FF5722*/
+}
+.contact-button {
+    
+    padding: 5px;
+    background-color: #f57c00;
+    border: none;
+    border-radius: 3px;
+    /* #f57c00   #ff6f00 */
+}
+.contact-button:hover {
+    background-color: orangered;
+}

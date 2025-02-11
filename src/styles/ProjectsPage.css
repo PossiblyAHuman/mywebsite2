@@ -1,0 +1,16 @@
+.project-container {
+    
+}
+
+.project-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-box-image {
+    height: 300px;
+}
+.project-box-name {
+    position: absolute;
+
+}
