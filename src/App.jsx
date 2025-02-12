@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import Navbar from './components/navbar.jsx'
+import Navbar from './components/Navbar.jsx'
 import ProjectContainer from './components/ProjectContainer.jsx'
 import SubContainer from './components/SubContainer.jsx'
 import Footer from './components/Footer.jsx'
@@ -13,6 +13,8 @@ import ContactMe from './components/ContactMe.jsx'
 function App() {
 
   const [currentPage, setCurrentPage] = useState('Homepage')
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   // Navbar appearing when scroll up logic
   const [scrollUp, setScrollUp] = useState(true)
@@ -41,7 +43,8 @@ function App() {
   return (
     <>
       <div className='all-content'>
-      <Navbar isVisible={scrollUp} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+      <Navbar isVisible={scrollUp} currentPage={currentPage} setCurrentPage={setCurrentPage} 
+      isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
       <div className='main-content'>
         {currentPage === 'Homepage' && <Homepage/>}
         {currentPage === 'AboutMe' && <AboutMe/>}

@@ -6,12 +6,26 @@
     background-color: #1a2b3c;
     background: linear-gradient(135deg, rgb(0, 121, 202),#1a2b3c);
     gap: 100px;
-    
+
+}
+
+@media (max-width: 1250px) {
+    .main-container {
+        gap: 0;
+    }
+}
+@media (max-width: 950px) {
+
+    .main-container-textbox {
+        position: absolute;
+    }
 }
   
 .main-image {
-    width: 500px;
-    height: 500px;
+
+    height: 90vw;
+    max-height: 650px;
+    max-width: 650px;
 }
 
 .textbox-container {
@@ -39,6 +53,7 @@
     background-color: #f57c00;
     border: none;
     border-radius: 2px;
+    width: 83px
 
     /* #f57c00 #ff6f00 */
 }

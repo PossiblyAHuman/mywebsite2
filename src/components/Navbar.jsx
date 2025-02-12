@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Navbar.css'
 
-function Navbar ({ isVisible, currentPage, setCurrentPage }) {
+function Navbar ({ isVisible, currentPage, setCurrentPage, isMenuOpen, setIsMenuOpen}) {
     return(
         <nav className={`navbar ${isVisible ? 'navbar-visible' : 'navbar-hidden'}`}>
             <div className='nav-container'>
@@ -9,6 +9,7 @@ function Navbar ({ isVisible, currentPage, setCurrentPage }) {
                     <img className='nav-logo' src='/logo.png'/>
                     <p>Andy Zhou</p>
                 </a>
+
                 <ul className='nav-menu'>
                     <li className='nav-item'>
                         <a onClick={()=>setCurrentPage('Homepage')} className='nav-links'>Home</a>
@@ -26,6 +27,10 @@ function Navbar ({ isVisible, currentPage, setCurrentPage }) {
                         <button className='contact-button' onClick={()=>setCurrentPage('ContactMe')}>Contact me</button>
                     </li>
                 </ul>
+
+                <div className='nav-hamburger'>
+                    <img className='nav-hamburger-icon' src='Hamburger_icon.png'/>
+                </div>
             </div>
 
         </nav>

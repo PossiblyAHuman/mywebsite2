@@ -6,6 +6,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 .social-logo {
     max-height: 25px;

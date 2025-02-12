@@ -1,16 +1,32 @@
-.project-container {
-    
+.projectspage-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+    padding: 40px;
+    margin: auto;
+    gap: 20px;
 }
 
-.project-box {
-    display: flex;
+.projectspage-box {
     justify-content: center;
     align-items: center;
+    display: flex;
+    position: relative;
 }
-.project-box-image {
-    height: 300px;
+.projectspage-box-image {
+    height: 18rem;
+    width: 18rem;
+    object-fit: cover;
 }
-.project-box-name {
+.projectspage-box-name-container {
+    background-color: rgba(42, 66, 125, 0.5);
     position: absolute;
-
+    top: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.projectspage-box-name {
+   
 }
