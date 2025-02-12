@@ -79,7 +79,8 @@
 .banner-carousel {
     display: flex;
     transition: transform 1s ease-in-out; /* Smooth sliding transition */
-    width: 300%; /* 100% per banner, so 3 banners are shown */
+    width: 100vw; /* 100% per banner, so 3 banners are shown */
+    height: 250px;
 }
   
 .banner {

@@ -1,0 +1,29 @@
+.project-instance {
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-instance-box {
+    background-color: white;
+    color: black;
+    height: 60%;
+    width: 45%;
+    z-index: 1001;
+    padding: auto;
+}
+.project-instance-x-button {
+    height: 50px;   
+}
+
+@media(max-width: 1000px) {
+    .project-instance-box {
+        width: 80%;
+    }
+}

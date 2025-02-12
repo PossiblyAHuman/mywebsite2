@@ -18,6 +18,21 @@
     width: 18rem;
     object-fit: cover;
 }
+@media(max-width: 1000px) {
+    .projectspage-container{
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .projectspage-box-image {
+        height: 27vw;
+        width: 27vw;
+    }
+    .projectspage-box-name {
+        font-size: 2vw;
+    }
+    
+}
 .projectspage-box-name-container {
     background-color: rgba(42, 66, 125, 0.5);
     position: absolute;
@@ -27,6 +42,4 @@
     justify-content: center;
     text-align: center;
 }
-.projectspage-box-name {
-   
-}
+

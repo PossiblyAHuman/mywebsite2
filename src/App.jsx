@@ -4,7 +4,7 @@ import Navbar from './components/Navbar.jsx'
 import ProjectContainer from './components/ProjectContainer.jsx'
 import SubContainer from './components/SubContainer.jsx'
 import Footer from './components/Footer.jsx'
-import Homepage from './Homepage.jsx'
+import Homepage from './components/Homepage.jsx'
 import AboutMe from './components/AboutMe.jsx'
 import ProjectsPage from './components/ProjectsPage.jsx'
 import Interests from './components/Interests.jsx'
@@ -38,6 +38,20 @@ function App() {
     }
   },[lastScrollY])
 
+  // Logic for when a Project is clicked on
+  const [projSelected, setProjSelected] = useState(null)
+
+  useEffect(()=>{
+    if(projSelected) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto'
+    };
+  },[projSelected])
 
 
   return (
@@ -46,9 +60,9 @@ function App() {
       <Navbar isVisible={scrollUp} currentPage={currentPage} setCurrentPage={setCurrentPage} 
       isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
       <div className='main-content'>
-        {currentPage === 'Homepage' && <Homepage/>}
+        {currentPage === 'Homepage' && <Homepage projSelected={projSelected} setProjSelected={setProjSelected}/>}
         {currentPage === 'AboutMe' && <AboutMe/>}
-        {currentPage === 'Projects' && <ProjectsPage/>}
+        {currentPage === 'Projects' && <ProjectsPage projSelected={projSelected} setProjSelected={setProjSelected}/>}
         {currentPage === 'Interests' && <Interests/>}
         {currentPage === 'ContactMe' && <ContactMe/>}
       </div>

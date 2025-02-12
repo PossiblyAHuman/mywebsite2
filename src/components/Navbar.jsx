@@ -29,7 +29,7 @@ function Navbar ({ isVisible, currentPage, setCurrentPage, isMenuOpen, setIsMenu
                 </ul>
 
                 <div className='nav-hamburger'>
-                    <img className='nav-hamburger-icon' src='Hamburger_icon.png'/>
+                    <img className='nav-hamburger-icon' src='Hamburger_icon.png' onClick={()=>{alert("work in progress")}}/>
                 </div>
             </div>
 
