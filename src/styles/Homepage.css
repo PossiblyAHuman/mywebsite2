@@ -44,8 +44,8 @@
         max-height: None;
         max-width: None;
 
-        height: 35vw;
-        width: 35vw;
+        height: 33vw;
+        width: 33vw;
     }
 }
 
@@ -74,9 +74,24 @@
     background-color: #f57c00;
     border: none;
     border-radius: 2px;
-    width: 83px
+    width: 83px;
+    font-size: 13px;
 
     /* #f57c00 #ff6f00 */
+}
+@media (min-width: 2000px) {
+    .textbox-header {
+        font-size: 62.5px;
+    }
+    
+    .textbox-text {
+        font-size: 27.5px;
+    }
+    .view-more-button {
+        font-size: 16.25px;
+        width: 98px;
+    }
+    .main-container-textbox {}
 }
 
 .view-more-button:hover {
