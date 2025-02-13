@@ -60,7 +60,7 @@ function App() {
       <Navbar isVisible={scrollUp} currentPage={currentPage} setCurrentPage={setCurrentPage} 
       isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
       <div className='main-content'>
-        {currentPage === 'Homepage' && <Homepage projSelected={projSelected} setProjSelected={setProjSelected}/>}
+        {currentPage === 'Homepage' && <Homepage currentPage={currentPage} setCurrentPage={setCurrentPage} projSelected={projSelected} setProjSelected={setProjSelected}/>}
         {currentPage === 'AboutMe' && <AboutMe/>}
         {currentPage === 'Projects' && <ProjectsPage projSelected={projSelected} setProjSelected={setProjSelected}/>}
         {currentPage === 'Interests' && <Interests/>}

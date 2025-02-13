@@ -24,8 +24,29 @@
 .main-image {
 
     height: 90vw;
-    max-height: 650px;
-    max-width: 650px;
+    max-height: 600px;
+    max-width: 600px;
+}
+
+@media (max-width: 1400px) {
+    .main-image {
+
+        height: 80vw;
+        max-height: 500px;
+        max-width: 500px;
+
+    }
+    
+}
+
+@media (min-width: 2000px) {
+    .main-image{
+        max-height: None;
+        max-width: None;
+
+        height: 35vw;
+        width: 35vw;
+    }
 }
 
 .textbox-container {
@@ -58,6 +79,9 @@
     /* #f57c00 #ff6f00 */
 }
 
+.view-more-button:hover {
+    background-color: orangered;
+}
   
 .project-text-featured {
     position: absolute;

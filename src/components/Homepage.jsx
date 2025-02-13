@@ -4,7 +4,7 @@ import ProjectContainer from './ProjectContainer.jsx'
 import SubContainer2 from './SubContainer2.jsx'
 import ProjectInstance from './ProjectInstance.jsx'
 
-function Homepage({projSelected, setProjSelected}) {
+function Homepage({currentPage, setCurrentPage, projSelected, setProjSelected}) {
 
   // Project banner auto switch logic
     const projectBD = {name:'projectBD', img:'projectBD.png', banner_img:'projectBD.png', description:'Empower the voice of Bangladesh Hindus against Tyranny'}
@@ -43,7 +43,7 @@ function Homepage({projSelected, setProjSelected}) {
             <p className='textbox-text'>Software Engineer</p>
             <p className='textbox-text'>Dedicate, Design, Develop</p>
           </div>
-          <button className='view-more-button'>View more</button>
+          <button className='view-more-button' onClick={()=>setCurrentPage('AboutMe')}>View more</button>
         </div>
       </div>
 
