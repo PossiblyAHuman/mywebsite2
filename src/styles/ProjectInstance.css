@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .project-instance-box {
     background-color: white;
@@ -17,11 +18,35 @@
     width: 45%;
     z-index: 1001;
     padding: auto;
+    border-radius: 10px;
+    position: relative;
+    overflow:hidden;
+    padding: 10px;
 }
 .project-instance-x-button {
-    height: 50px;   
+    margin: px;
+    height: 40px; 
+    position: absolute; 
+    cursor: pointer;
 }
 
+.project-instance-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    width: 100%;
+    height: 100%;
+}
+.project-instance-box-img {
+    width: 80%;
+    height: auto;
+    flex-shrink: 0;
+}
+.project-instance-box-text{
+    max-width: 80%;
+}
 @media(max-width: 1000px) {
     .project-instance-box {
         width: 80%;

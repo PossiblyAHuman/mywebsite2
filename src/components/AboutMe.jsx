@@ -3,6 +3,7 @@ import '../styles/AboutMe.css'
 const AboutMe = () => {
     return(
         <>
+        <h1 style={{backgroundColor:'orange'}}>WORK IN PROGRESS</h1>
         <div className='about-me'>
             <img className='photo' src='placeholder.png'/>
             <div className='textbox'>

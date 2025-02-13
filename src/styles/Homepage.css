@@ -20,6 +20,12 @@
         position: absolute;
     }
 }
+
+@media(min-width: 2000px) {
+    .main-container {
+        
+    }
+}
   
 .main-image {
 
@@ -127,3 +133,13 @@
     height: 100%;
     flex-shrink: 0; /* Prevent the banners from shrinking */
 }
+/*
+@media(min-width: 2000px) {
+    .banner-carousel-container {
+        height: 11vw;
+    }
+    .banner-carousel {
+        height: 11vw;
+    }
+}
+*/

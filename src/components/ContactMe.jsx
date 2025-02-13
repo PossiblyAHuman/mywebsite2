@@ -1,5 +1,8 @@
 const ContactMe = () => {
     return(
-        <>Contact me plz I beg you XD</>
+        <>
+            <h1 style={{backgroundColor:'orange'}}>WORK IN PROGRESS</h1>
+            Contact me plz I beg you XD
+        </>
     )
 }; export default ContactMe
