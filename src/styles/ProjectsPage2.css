@@ -1,0 +1,10 @@
+.proj2-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.proj2-card-img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}

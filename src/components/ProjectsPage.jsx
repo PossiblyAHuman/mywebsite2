@@ -6,7 +6,7 @@ const ProjectsPage = ({ projSelected, setProjSelected }) => {
     const fitnessApp = {name:'Fitness Interval Timer', img:'IntervalTimer.png', banner_img:'IntervalTimer4.png', description:'Prototype for an interval timer Fitness App'}
     const GCBC = {name:'GCBC', img:'GCBC_projectspage.avif', banner_img:'GCBC.png', description:'Supporting a Local Church and maintaining their Website'}
     const filler = {name: 'Testing', img: 'tree3.png', description: ''}
-    const projectList = [projectBD, fitnessApp, GCBC, filler, filler, filler, filler,]
+    const projectList = [projectBD, fitnessApp, GCBC, filler, filler, filler, filler, ]
 
     return(
         <>
