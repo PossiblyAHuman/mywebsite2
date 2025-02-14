@@ -5,7 +5,7 @@
     gap: 3vw;
     padding: 25px;
     display: flex;
-    flex-direction: column;
+    flex-grow: 1;
 }
 
 .contact-form-container {

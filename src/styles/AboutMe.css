@@ -5,14 +5,40 @@
     justify-content: center;
     flex-grow: 1;
     padding: 20px;
+    gap: 30px;
 }
-.photo {
+.about-me-photo {
     max-width: 100%;
     height: auto;
     max-height: 50vh;
 }
 
-.textbox {
-    background-color: blue;
+.about-me-textbox {
     width:600px;
+}
+.image-gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-me-image-gallery {
+    width: 100vw;
+    height: 15vh;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-gallery-image {
+    height: 175px;
+}
+
+.about-me-horizontal-line {
+    width: 820px; 
+    height: 2px; 
+    background-color: #FFFAFA;
+    margin: 20px;
+
 }

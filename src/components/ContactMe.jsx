@@ -2,8 +2,7 @@ import '../styles/ContactMe.css'
 
 const ContactMe = () => {
     return(
-        <>
-            <h1 style={{backgroundColor:'orange'}}>WORK IN PROGRESS</h1>
+        <>  
             <div className="contact">
                 
                 <div className="contact-form-container">
