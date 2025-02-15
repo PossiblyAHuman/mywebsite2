@@ -1,0 +1,12 @@
+.fitness {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fitness-img {
+    max-width: 100%;
+    max-height: 500px;
+    align-self: center;
+    justify-self: center;
+}

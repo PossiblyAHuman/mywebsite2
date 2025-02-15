@@ -4,6 +4,7 @@
     justify-content: center;
     flex-grow: 1;
     padding: 20px;
+    flex-direction: column;
 }
 .photo {
     max-width: 100%;

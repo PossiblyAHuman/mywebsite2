@@ -8,24 +8,26 @@
     gap: 30px;
 }
 .about-me-photo {
-    max-width: 100%;
-    height: auto;
+    width: 600px;
+    height: 600px;
     max-height: 50vh;
+    object-fit: cover;
 }
 
 .about-me-textbox {
     width:600px;
 }
+
 .image-gallery-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .about-me-image-gallery {
     width: 100vw;
     height: 15vh;
-
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -40,5 +42,4 @@
     height: 2px; 
     background-color: #FFFAFA;
     margin: 20px;
-
 }
