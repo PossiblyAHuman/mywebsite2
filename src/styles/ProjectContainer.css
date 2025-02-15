@@ -34,10 +34,15 @@
     width: 100%;
     object-fit: cover
 }
-/*
+
 @media(min-width: 2000px) {
     .project-container {
-        height: 12vw;
+        height: 11vw;
+    }
+    .project-image {
+        height: 11vw;
+        width: 100%;
+        object-fit: cover
     }
 }
- */
+ 

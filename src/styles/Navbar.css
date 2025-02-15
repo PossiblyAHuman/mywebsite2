@@ -38,6 +38,12 @@
     }
 }
 
+@media(min-width: 2000px) {
+    .nav-container {
+        max-width: 50vw;
+    }
+}
+
 .nav-logo-container{
     color: #003C5D;
     font-size: 24px;
@@ -61,6 +67,19 @@
     text-decoration: none;
     font-size: 18px;
     color: #003C5D;
+}
+
+@media(min-width: 2000px) {
+    .nav-logo-container {
+        font-size: 26.4px;
+    }
+    .nav-logo {
+        max-width: 3.3rem;
+    }
+    .nav-links {
+        font-size: 19.8px;
+
+    }
 }
 
 

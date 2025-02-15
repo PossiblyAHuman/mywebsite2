@@ -23,7 +23,7 @@
 
 @media(min-width: 2000px) {
     .main-container {
-        
+        padding: 4.5vw;
     }
 }
   
@@ -133,7 +133,7 @@
     height: 100%;
     flex-shrink: 0; /* Prevent the banners from shrinking */
 }
-/*
+
 @media(min-width: 2000px) {
     .banner-carousel-container {
         height: 11vw;
@@ -142,4 +142,3 @@
         height: 11vw;
     }
 }
-*/
