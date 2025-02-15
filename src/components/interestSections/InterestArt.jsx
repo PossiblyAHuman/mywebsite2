@@ -3,6 +3,7 @@ const InterestArt = () => {
     return(
         <>
             <div className='interest-art'>
+            <div className='art-container'>
                 <div className='interest-art-text'>
                     <h1>Art</h1>
                     <p>
@@ -13,6 +14,7 @@ const InterestArt = () => {
                     </p>
                 </div>
                 <img className='interest-art-image' src='tree3.png'/>
+            </div>
             </div>
         </>
     )

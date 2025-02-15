@@ -9,7 +9,13 @@
     padding: 10px;
     background-color: black;
 }
-
+.computer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 95%;
+    gap: 5%;
+}
 .interest-computer-image {
     max-height: 400px;
     width: auto;

@@ -3,6 +3,7 @@ const InterestComputer = () => {
     return(
         <>
             <div className='interest-computer'>
+            <div className='computer-container'>
                 <img className='interest-computer-image' src='rog.png'/>
                 <div className='interest-computer-text'>
                     <h1>Computers</h1>
@@ -22,6 +23,7 @@ const InterestComputer = () => {
                     </ul>
                     img source: https://www.tomshardware.com/reviews/asus-rog-strix-g15-advantage-edition-rx-6800m
                 </div>
+            </div>
             </div>
         </>
     )

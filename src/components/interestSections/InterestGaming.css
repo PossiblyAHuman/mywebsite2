@@ -9,10 +9,16 @@
     padding: 10px;
     background-color: black;
 }
-
+.gaming-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 95%;
+    gap: 5%;
+}
 .interest-gaming-image {
-    max-height: 400px;
-    width: 500px;
+    height: auto;
+    max-width: 600px;
     object-fit: contain;
     flex: 1;
 }

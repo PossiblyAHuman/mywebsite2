@@ -2,7 +2,7 @@ import '../styles/AboutMe.css'
 import { useState } from 'react'
 
 const AboutMe = () => {
-    const [img, setImg] = useState('me.png')
+    const [img, setImg] = useState('placeholder3.png')
     return(
         <>
         <h1 style={{backgroundColor:'orange'}}>WORK IN PROGRESS</h1>
@@ -18,7 +18,7 @@ const AboutMe = () => {
         <div className='image-gallery-container'>
             <div className="about-me-horizontal-line"></div>
             <div className='about-me-image-gallery'>
-                <img className='image-gallery-image' src='me.png' onClick={()=>setImg('me.png')}/>
+                <img className='image-gallery-image' src='placeholder3.png' onClick={()=>setImg('placeholder3.png')}/>
                 <img className='image-gallery-image' src='placeholder.png' onClick={()=>setImg('placeholder.png')}/>
                 <img className='image-gallery-image' src='tree3.png' onClick={()=>setImg('tree3.png')}/>
                 <img className='image-gallery-image' src='logo.png' onClick={()=>setImg('logo.png')}/>

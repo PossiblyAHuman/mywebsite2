@@ -3,6 +3,7 @@ const InterestGaming = () => {
     return(
         <>
             <div className='interest-gaming'>
+                <div className='gaming-container'>
                 <div className='interest-gaming-text'>
                     <h1>Gaming</h1>
                     <p>
@@ -13,6 +14,7 @@ const InterestGaming = () => {
                     </p>
                 </div>
                 <img className='interest-gaming-image' src='gaming.jpg'/>
+                </div>
             </div>
         </>
     )

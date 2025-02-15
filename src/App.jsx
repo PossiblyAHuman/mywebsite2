@@ -4,6 +4,7 @@ import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Homepage from './components/Homepage.jsx'
 import AboutMe from './components/AboutMe.jsx'
+import AboutMe2 from './components/AboutMe2.jsx'
 import ProjectsPage from './components/ProjectsPage.jsx'
 import Interests from './components/Interests.jsx'
 import ContactMe from './components/ContactMe.jsx'
@@ -59,7 +60,7 @@ function App() {
       isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
       <div className='main-content'>
         {currentPage === 'Homepage' && <Homepage currentPage={currentPage} setCurrentPage={setCurrentPage} projSelected={projSelected} setProjSelected={setProjSelected}/>}
-        {currentPage === 'AboutMe' && <AboutMe/>}
+        {currentPage === 'AboutMe' && <AboutMe2/>}
         {currentPage === 'Projects' && <ProjectsPage projSelected={projSelected} setProjSelected={setProjSelected}/>}
         {currentPage === 'Interests' && <Interests/>}
         {currentPage === 'ContactMe' && <ContactMe/>}

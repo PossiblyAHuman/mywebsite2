@@ -1,0 +1,103 @@
+.aboutme2 {
+
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 2%;
+    height: 100%;
+    width: 100%;
+}
+.aboutme2-main{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+
+.aboutme2-main-left{
+    height: 600px;
+    width: 600px;
+}
+
+.aboutme2-textbox{
+    color: black;
+    padding-bottom: 20%;
+}
+.aboutme2-textbox-header {
+    font-size: 50px;
+}
+.aboutme2-main-right{
+    height: 600px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.aboutme2-main-img {
+    width: auto;
+    height: 110%;
+}
+
+@media(min-width: 801px) {
+    .aboutme2-main-left{
+        height: 600px;
+        width: 600px;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 1300px) {
+    .aboutme2-main-left{
+        max-width: 50vw;
+
+    }
+    .aboutme2-main-right{
+        max-width: 40vw;
+    }
+}
+
+@media(max-width: 800px) {
+    .aboutme2-main {
+        flex-direction: column;
+    }
+    .aboutme2-main-left{
+        max-width: 90vw;
+        height: auto;
+        margin: 0px;
+
+    }
+    .aboutme2-main-right{
+        max-width: 90vw;
+        margin: 0px;
+
+    }
+}
+
+
+.aboutme2-top {
+    height: 100px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.aboutme2-bottom{
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+}
+
+
+.placeholder{
+    color: black;
+    position: absolute;
+    top: 50px;
+}
