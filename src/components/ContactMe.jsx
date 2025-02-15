@@ -35,8 +35,8 @@ const ContactMe = () => {
                             <div className='contact-form-section'>Message:</div>
                             <textarea className='contact-form-info2'></textarea>
                         </div>
-                        <button className='contact-form-button' onClick={()=>alert("work in progress")}>Submit</button>
-                        
+                        {/*<button className='contact-form-button' onClick={()=>alert("work in progress")}>Submit</button>*/}
+                        <div className='contact-form-button' onClick={()=>alert("work in progress")}>Submit</div>
                     </form>
                 </div>
                 </div>

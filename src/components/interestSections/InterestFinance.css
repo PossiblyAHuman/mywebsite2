@@ -1,0 +1,21 @@
+.interest-finance {
+    height: 500px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 3px solid green;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: black;
+}
+
+.interest-finance-image {
+    max-height: 400px;
+    width: 500px;
+    object-fit: contain;
+    flex: 1;
+}
+.interest-finance-text {
+    flex: 1;
+}

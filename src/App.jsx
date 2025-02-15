@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar.jsx'
-import ProjectContainer from './components/ProjectContainer.jsx'
-import SubContainer from './components/SubContainer.jsx'
 import Footer from './components/Footer.jsx'
 import Homepage from './components/Homepage.jsx'
 import AboutMe from './components/AboutMe.jsx'

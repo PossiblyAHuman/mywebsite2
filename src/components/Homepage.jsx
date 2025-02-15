@@ -4,12 +4,14 @@ import ProjectContainer from './ProjectContainer.jsx'
 import SubContainer2 from './SubContainer2.jsx'
 import ProjectInstance from './ProjectInstance.jsx'
 
+import ProjectBD from './projects/ProjectBD.jsx'
+import FitnessIntervalTimer from './projects/FitnessIntervalTimer.jsx'
 function Homepage({currentPage, setCurrentPage, projSelected, setProjSelected}) {
 
   // Project banner auto switch logic
-    const projectBD = {name:'projectBD', img:'projectBD.png', banner_img:'projectBD.png', description:'Empower the voice of Bangladesh Hindus against Tyranny'}
-    const fitnessApp = {name:'Fitness Interval Timer', img:'IntervalTimer.png', banner_img:'IntervalTimer4.png', description:'Prototype for an interval timer Fitness App'}
-    const GCBC = {name:'GCBC', img:'GCBC_projectspage.avif', banner_img:'GCBC.png', description:'Supporting a Local Church and maintaining their Website'}
+  const projectBD = {name:'projectBD', img:'projectBD.png', banner_img:'projectBD.png', description:'Empower the voice of Bangladesh Hindus against Tyranny', projComponent: <ProjectBD/>}
+  const fitnessApp = {name:'Fitness Interval Timer', img:'IntervalTimer.png', banner_img:'IntervalTimer4.png', description:'Prototype for an interval timer Fitness App', projComponent: <FitnessIntervalTimer/>}
+  const GCBC = {name:'GCBC', img:'GCBC_projectspage.avif', banner_img:'GCBC.png', description:'Supporting a Local Church and maintaining their Website'}
 
   const banners = [
     <ProjectContainer proj={projectBD} projSelected={projSelected} setProjSelected={setProjSelected}/>,

@@ -89,6 +89,12 @@
     background-color: #f57c00;
     border: none;
     border-radius: 3px;
+    color: white;
+
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .contact-form-button:hover {

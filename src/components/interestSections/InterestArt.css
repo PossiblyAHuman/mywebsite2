@@ -1,0 +1,21 @@
+.interest-art {
+    height: 500px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 3px solid green;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: black;
+}
+
+.interest-art-image {
+    max-height: 400px;
+    width: auto;
+    object-fit: contain;
+    flex: 1;
+}
+.interest-art-text {
+    flex: 1;
+}
