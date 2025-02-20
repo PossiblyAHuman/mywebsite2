@@ -6,17 +6,19 @@ import ProjectInstance from './ProjectInstance.jsx'
 
 import ProjectBD from './projects/ProjectBD.jsx'
 import FitnessIntervalTimer from './projects/FitnessIntervalTimer.jsx'
+import GCBC from './projects/GCBC.jsx'
+
 function Homepage({currentPage, setCurrentPage, projSelected, setProjSelected}) {
 
   // Project banner auto switch logic
   const projectBD = {name:'projectBD', img:'projectBD.png', banner_img:'projectBD.png', description:'Empower the voice of Bangladesh Hindus against Tyranny', projComponent: <ProjectBD/>}
   const fitnessApp = {name:'Fitness Interval Timer', img:'IntervalTimer.png', banner_img:'IntervalTimer4.png', description:'Prototype for an interval timer Fitness App', projComponent: <FitnessIntervalTimer/>}
-  const GCBC = {name:'GCBC', img:'GCBC_projectspage.avif', banner_img:'GCBC.png', description:'Supporting a Local Church and maintaining their Website'}
+  const GCBCproj = {name:'GCBC', img:'GCBC_projectspage.avif', banner_img:'GCBC.png', description:'Supporting a Local Church and maintaining their Website', projComponent: <GCBC/>}
 
   const banners = [
     <ProjectContainer proj={projectBD} projSelected={projSelected} setProjSelected={setProjSelected}/>,
     <ProjectContainer proj={fitnessApp} projSelected={projSelected} setProjSelected={setProjSelected}/>,
-    <ProjectContainer proj={GCBC} projSelected={projSelected} setProjSelected={setProjSelected}/>,
+    <ProjectContainer proj={GCBCproj} projSelected={projSelected} setProjSelected={setProjSelected}/>,
   ]
 
   const [currentBanner, setCurrentBanner] = useState(0)
