@@ -11,7 +11,7 @@ const ProjectsPage = ({ projSelected, setProjSelected }) => {
     const GCBCproj = {name:'GCBC', img:'GCBC_projectspage.avif', banner_img:'GCBC.png', description:'Supporting a Local Church and maintaining their Website', projComponent: <GCBC/>}
     const RTChat = {name: 'Real Time Chat', img: 'ChatWebsite2.png', description: '', projComponent: <RealTimeChat/>}
     const filler = {name: 'Testing', img: 'tree3.png', description: ''}
-    const projectList = [projectBD, fitnessApp, GCBCproj, RTChat, filler, filler, filler, filler, ]
+    const projectList = [RTChat, fitnessApp, projectBD, GCBCproj, filler, filler, filler, filler, ]
 
     return(
         <>
