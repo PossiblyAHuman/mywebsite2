@@ -4,7 +4,7 @@ const RealTimeChat = () => {
     return(
         <div className='rtchat'>
             <img className='rtchat-image' src='ChatWebsite.png'/>
-            A chat website with real time messaging/file uploads, with video calling. The backend was designed almost entirely from scratch with the exception of the TCP socket itself.
+            A chat website with real time messaging/file uploads, and video calling. The backend was designed almost entirely from scratch with the exception of the TCP socket itself.
             <h1>WebSocket</h1>
             <p>I built WebSocket fully from scratch by looking at the protocol. First I added a websocket endpoint and the corresponding function to my TCP handler, which upgraded the TCP socket and connection to a WebSocket one. 
                 I then created my own WebSocket handler, which receives Websocket Frames and handles it based on the WebSocket protocol. Including reading the frame's header through bit manipulation, buffering, parsing, processing.
