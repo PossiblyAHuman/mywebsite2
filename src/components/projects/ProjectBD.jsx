@@ -3,6 +3,7 @@ import './ProjectBD.css'
 const ProjectBD = () => {
     return(
         <div className='projectBD'>
+            <img className='projectBD-img' src='pbd_home1.png'></img>
             <h1>What is this project about?</h1>
             <p>There is a genocide going on in Bangladesh, we wish to help Bangladesh Hindus against their oppressors.</p>
             <h1>Our Mission</h1>
