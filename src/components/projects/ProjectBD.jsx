@@ -4,6 +4,7 @@ const ProjectBD = () => {
     return(
         <div className='projectBD'>
             <img className='projectBD-img' src='pbd_home1.png'></img>
+            <p>projectbd.org</p>
             <h1>What is this project about?</h1>
             <p>There is a genocide going on in Bangladesh, we wish to help Bangladesh Hindus against their oppressors.</p>
             <h1>Our Mission</h1>
@@ -18,6 +19,8 @@ const ProjectBD = () => {
             <p>As you scroll down the homepage, you will se our mission statement. So that the user knows what this organization is about. Since this organization is small, we need this information front and center.</p>
             <img className='projectBD-img' src='pbd_home3.png'></img>
             <p>We then have some images, we will change these placeholder images with something related to the suffering of Bangladesh hindus</p>
+            <img className='projectBD-img' src='pbd_home3.5.png'></img>
+            <p>The painting with the hindu lady is peeking through the website. I thought it would be interesting to use this as symbolism for the Hindus being powerless when it comes to "What is Happening in Bangladesh". I doubt too many people would notice this but I think it's a cool addition.</p>
             <img className='projectBD-img' src='pbd_home4.png'></img>
             <p>This footer isn't done yet</p>
             <h1>Backend</h1>

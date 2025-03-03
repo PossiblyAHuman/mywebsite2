@@ -8,6 +8,10 @@ import RealTimeChat from './projects/RealTimeChat.jsx';
 import { useState, useEffect } from 'react'
 import Navbar from './Navbar';
 import Footer from './Footer.jsx';
+import AssemblySnakeGame from './projects/AssemblySnakeGame.jsx';
+import TrafficLightChip from './projects/TrafficLightChip.jsx';
+import ReduxPlantShop from './projects/ReduxPlantShop.jsx';
+import Sixerr from './projects/Sixerr.jsx';
 
 const ProjectsPage = () => {
 
@@ -40,8 +44,12 @@ const ProjectsPage = () => {
     const fitnessApp = {name:'Fitness Interval Timer', img:'IntervalTimer.png', banner_img:'IntervalTimer4.png', description:'Prototype for an interval timer Fitness App', projComponent: <FitnessIntervalTimer/>}
     const GCBCproj = {name:'GCBC', img:'GCBC_projectspage.avif', banner_img:'GCBC.png', description:'Supporting a Local Church and maintaining their Website', projComponent: <GCBC/>}
     const RTChat = {name: 'Real Time Chat', img: 'ChatWebsite2.png', description: '', projComponent: <RealTimeChat/>}
+    const TrafficLight = {name:'4 Way Traffic Light Chip', img: 'tlc2.png', description:'', projComponent: <TrafficLightChip/>}
+    const ReduxPlant = {name:'Redux Plant Shop', img: 'ReduxPlants.png', description:'', projComponent: <ReduxPlantShop/>}
+    const AssemblySnake = {name:'Assembly Snake Game', img: 'tree3.png', description:'', projComponent: <AssemblySnakeGame/>}
+    const SixerrWebsite = {name:'Sixerr E-commerce Website', img: 'sixerrlogo.png', description:'', projComponent: <Sixerr/>}
     const filler = {name: 'Testing', img: 'tree3.png', description: ''}
-    const projectList = [projectBD, RTChat, fitnessApp, GCBCproj, filler, filler, filler, filler, ]
+    const projectList = [projectBD, RTChat, fitnessApp, GCBCproj, TrafficLight, ReduxPlant, AssemblySnake, SixerrWebsite, ]
 
     return(
         <>
