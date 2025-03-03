@@ -8,7 +8,27 @@ import ProjectBD from './projects/ProjectBD.jsx'
 import FitnessIntervalTimer from './projects/FitnessIntervalTimer.jsx'
 import GCBC from './projects/GCBC.jsx'
 
-function Homepage({currentPage, setCurrentPage, projSelected, setProjSelected}) {
+import Footer from './Footer.jsx'
+import Navbar from './Navbar.jsx'
+
+function Homepage() {
+
+    
+    // Logic for when a Project is clicked on
+    const [projSelected, setProjSelected] = useState(null)
+
+    useEffect(()=>{
+      if(projSelected) {
+        document.body.style.overflow = 'hidden'
+      } else {
+        document.body.style.overflow = 'auto'
+      }
+  
+      return () => {
+        document.body.style.overflow = 'auto'
+      };
+    },[projSelected])
+
 
   // Project banner auto switch logic
   const projectBD = {name:'projectBD', img:'projectBD.png', banner_img:'projectBD.png', description:'Empower the voice of Bangladesh Hindus against Tyranny', projComponent: <ProjectBD/>}
@@ -33,11 +53,43 @@ function Homepage({currentPage, setCurrentPage, projSelected, setProjSelected}) 
     }
   }, [])
 
+  const [scrollUp, setScrollUp] = useState(true)
 
+  const [lastScrollY, setLastScrollY] = useState(0)
+
+  const handleScroll = () => {
+    if (window.scrollY < lastScrollY) {
+      setScrollUp(true)
+    } else if (window.scrollY > lastScrollY) {
+      setScrollUp(false)
+    }
+
+    setLastScrollY(window.scrollY)
+  }
+
+  useEffect(()=>{
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  },[lastScrollY])
+
+
+
+
+
+  
 
   return (
     <>
+      <div className='all-content'>
+      <Navbar isVisible={scrollUp}/>
+      <div className='main-content'>
+        
       
+
+
       <div className='main-container'>
         
         <img className='main-image' src='placeholder.png'/>
@@ -47,7 +99,7 @@ function Homepage({currentPage, setCurrentPage, projSelected, setProjSelected}) 
             <p className='textbox-text'>Software Engineer</p>
             <p className='textbox-text'>Dedicate, Design, Develop</p>
           </div>
-          <button className='view-more-button' onClick={()=>setCurrentPage('AboutMe')}>View more</button>
+          <button className='view-more-button' onClick={()=>(window.location.href = '/about')}>View more</button>
         </div>
       </div>
 
@@ -76,6 +128,11 @@ function Homepage({currentPage, setCurrentPage, projSelected, setProjSelected}) 
       )}
 
       <SubContainer2/>
+
+      
+      </div>
+      <Footer />
+      </div>
     </>
   )
 }

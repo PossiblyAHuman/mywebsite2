@@ -1,8 +1,36 @@
 import '../styles/AboutMe2.css'
-
+import { useState, useEffect } from 'react'
+import Navbar from './Navbar';
+import Footer from './Footer';
 const AboutMe2 = () => {
+    const [scrollUp, setScrollUp] = useState(true)
+
+    const [lastScrollY, setLastScrollY] = useState(0)
+  
+    const handleScroll = () => {
+      if (window.scrollY < lastScrollY) {
+        setScrollUp(true)
+      } else if (window.scrollY > lastScrollY) {
+        setScrollUp(false)
+      }
+  
+      setLastScrollY(window.scrollY)
+    }
+  
+    useEffect(()=>{
+      window.addEventListener('scroll', handleScroll)
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll)
+      }
+    },[lastScrollY])
+
     return(
         <>
+        <div className='all-content'>
+        <Navbar isVisible={scrollUp}/>
+        <div className='main-content'>
+
         <div className='aboutme2'>
             <h1 style={{backgroundColor:'orange'}}>WORK IN PROGRESS</h1>
             <div className='aboutme2-main'>
@@ -21,6 +49,9 @@ const AboutMe2 = () => {
                     <img className='aboutme2-main-img' src='placeholder3.png'/>
                 </div>
             </div>
+        </div>
+        </div>
+        <Footer/>
         </div>
         </>
     )

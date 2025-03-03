@@ -1,8 +1,36 @@
 import '../styles/ContactMe.css'
 
+import { useState, useEffect } from 'react';
+import Footer from './Footer.jsx'
+import Navbar from './Navbar.jsx'
 const ContactMe = () => {
+      const [scrollUp, setScrollUp] = useState(true)
+    
+      const [lastScrollY, setLastScrollY] = useState(0)
+    
+      const handleScroll = () => {
+        if (window.scrollY < lastScrollY) {
+          setScrollUp(true)
+        } else if (window.scrollY > lastScrollY) {
+          setScrollUp(false)
+        }
+    
+        setLastScrollY(window.scrollY)
+      }
+    
+      useEffect(()=>{
+        window.addEventListener('scroll', handleScroll)
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll)
+        }
+      },[lastScrollY])
+
     return(
-        <>  
+        <> 
+        <div className='all-content'>
+        <Navbar isVisible={scrollUp}/>
+        <div className='main-content'> 
             <div className="contact">
                 
                 <div className="contact-form-container">
@@ -41,6 +69,9 @@ const ContactMe = () => {
                 </div>
                 </div>
             </div>
+        </div>
+        <Footer/>
+        </div>
         </>
     )
 }; export default ContactMe

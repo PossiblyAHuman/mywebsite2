@@ -9,65 +9,18 @@ import ProjectsPage from './components/ProjectsPage.jsx'
 import Interests from './components/Interests.jsx'
 import ContactMe from './components/ContactMe.jsx'
 
+import { Routes, Route } from 'react-router-dom'
+
 function App() {
 
-  const [currentPage, setCurrentPage] = useState('Homepage')
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  // Navbar appearing when scroll up logic
-  const [scrollUp, setScrollUp] = useState(true)
-  const [lastScrollY, setLastScrollY] = useState(0)
-
-  const handleScroll = () => {
-    if (window.scrollY < lastScrollY) {
-      setScrollUp(true)
-    } else if (window.scrollY > lastScrollY) {
-      setScrollUp(false)
-    }
-
-    setLastScrollY(window.scrollY)
-  }
-
-  useEffect(()=>{
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  },[lastScrollY])
-
-  // Logic for when a Project is clicked on
-  const [projSelected, setProjSelected] = useState(null)
-
-  useEffect(()=>{
-    if(projSelected) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = 'auto'
-    }
-
-    return () => {
-      document.body.style.overflow = 'auto'
-    };
-  },[projSelected])
-
-
   return (
-    <>
-      <div className='all-content'>
-      <Navbar isVisible={scrollUp} currentPage={currentPage} setCurrentPage={setCurrentPage} 
-      isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
-      <div className='main-content'>
-        {currentPage === 'Homepage' && <Homepage currentPage={currentPage} setCurrentPage={setCurrentPage} projSelected={projSelected} setProjSelected={setProjSelected}/>}
-        {currentPage === 'AboutMe' && <AboutMe2/>}
-        {currentPage === 'Projects' && <ProjectsPage projSelected={projSelected} setProjSelected={setProjSelected}/>}
-        {currentPage === 'Interests' && <Interests/>}
-        {currentPage === 'ContactMe' && <ContactMe/>}
-      </div>
-      <Footer />
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<Homepage/>}/>
+      <Route path="/about" element={<AboutMe2/>}/>
+      <Route path="/projects" element={<ProjectsPage/>}/>
+      <Route path="/interests" element={<Interests/>}/>
+      <Route path="/contact" element={<ContactMe/>}/>
+    </Routes>
   )
 }
 
